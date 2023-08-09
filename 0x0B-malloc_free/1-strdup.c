@@ -2,13 +2,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * strdup-duplicates to new memeory space location
- * str: char
+ * _strdup-duplicates to new memeory space location
+ *@str: char
  * Return: 0
  */
 char *_strdup(char *str)
 {
-
 	char *aaa;
 	int i, r = 0;
 
