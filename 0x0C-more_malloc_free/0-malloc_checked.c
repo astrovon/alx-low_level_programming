@@ -1,18 +1,18 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
- * malloc_checked - Allocates memory using malloc.
- * @b: The number of bytes to be allocated.
+ * malloc_checked - allocates memory using malloc, exit(98) if it fails
+ * @b: size of the memory block to be allocated
  *
- * Return: A pointer to the allocated memory.
+ * Return: pointer to the address of the memory block
  */
+
 void *malloc_checked(unsigned int b)
 {
-	void *mem = malloc(b);
+	void *block;
 
-	if (mem == NULL)
+	block = malloc(b);
+	if (block == NULL)
 		exit(98);
-
-	return (mem);
+	return (block);
 }
